@@ -1,0 +1,277 @@
+﻿
+/*для больших экранов*/
+@media only screen and (min-width: 2560px){
+    .promo {
+        background: #fcc302 url(../img/promo/mainPromo.png) no-repeat 1543px 35px;
+        background-size: 360px 530px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .promo{
+        background: $mainColor url(../img/promo/mainPromo.png) no-repeat 755px 10px;
+        background-size: 360px 530px;
+    }
+}
+/*Medium Для средних экранов*/
+@media only screen and (max-width: 1024px){
+    .promo {
+        background: #fcc302 url(../img/promo/mainPromo.png) no-repeat 660px 10px;
+        background-size: 360px 530px;
+    }
+    .here__block {
+        width: 320px;
+    }
+    .TitleHere__block, .team__block, .recent__block {
+        width: 320px;
+    }
+    article {
+        width: 78%;
+    }
+    .article__img img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .header__search {
+        width: 260px;
+    }
+    .promo {
+        background: #fcc302 url(../img/promo/mainPromo.png) no-repeat 660px 10px;
+        background-size: 333px 530px;
+    }
+    .TitleHere__block, .team__block, .recent__block {
+        width: 310px;
+    }
+}
+
+/*Smal для маленьких экранов*/
+@media only screen and (max-width: 768px){
+    .header__logo {
+        width: 150px;
+    }
+    .header__menu nav{
+        justify-content: center;
+    }
+    .header__menu nav a {
+        margin-right: 10px;
+    }
+    .here__block,.TitleHere__block,.team__block {
+        width: 235px;
+    }
+    .here__block-img,.TitleHere__block-img,.team__block-img {
+        height: 280px;
+    }
+    .here__block-title {
+        font-size: 1.5rem;
+    }
+    .here__block-discr {
+        font-size: 1.2rem;
+    }
+    .darkTitle {
+        font-size: 2rem;
+    }
+    .team__block-name {
+        font-size: 1.5rem;
+    }
+    .team__block-position {
+        font-size: 1.5rem;
+    }
+    .progress__text {
+        font-size: 28px;
+    }
+    .recent {
+        min-height: 960px;
+        padding: 67px 20px;
+    }
+    .recent__block-img {
+        height: 245px;
+    }
+    .recent__block {
+        width: 235px;
+    }
+    .recent__block-content {
+        padding: 10px;
+    }
+    .recent__block-title {
+        font-size: 1.3rem;
+    }
+    .footer__blocks {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer__block-subscription {
+        margin-top: 50px;
+    }
+    article h1 {
+        font-size: 3rem;
+    }
+    aside h4 {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 667px){
+    .header__logo {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__search {
+        width: 310px;
+    }
+    .promo-title {
+        text-align: center;
+    }
+    .promo-title h1 {
+        font-size: 3rem;
+    }
+    .promo-title__wrapButton {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .veterinarian__blocks {
+        flex-direction: column;
+    }
+    .veterinarian__video {
+        margin-top: 100px;
+    }
+    .veterinarian__video::before {
+        bottom: -30px;
+        left: -30px;
+        top: -30px;
+        right: -30px;
+        width: auto;
+        height: auto;
+    }
+    .here__blocks {
+        flex-direction: column;
+    }
+    .here__block, .TitleHere__block, .team__block,.progress__block,.recent__block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .TitleHere__block-img, .team__block-img,.recent__block-img {
+        height: 380px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .veterinarian-video__video {
+        margin-bottom: 100px;
+    }
+    .veterinarian-video__video::before {
+        bottom: -30px;
+        left: -30px;
+        top: -30px;
+        right: -30px;
+        width: auto;
+        height: auto;
+    }
+    .TitleHere__blocks,.team__blocks,.progress__blocks,.recent__blocks {
+        flex-direction: column;
+    }
+    .progress__blocks {
+        align-items: center;
+    }
+    .recent__block-title {
+        font-size: 1.5rem;
+    }
+    article {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+}
+/*Exstra Smal для супер маленьких экранов*/
+@media only screen and (max-width: 480px){
+    .footer__block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer__block-title h4,.footer__block-text {
+       text-align: left;
+    }
+    .footer__block-social {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 425px){
+    .scroll-menu {
+        position: fixed;
+        right: -107%;
+    }
+    .scroll-menu__active{
+        right: -96%;
+    }
+    .scroll-menu__actiiveRight{
+        right: -7%!important;
+    }
+}
+@media only screen and (max-width: 414px){
+    .promo-title h1 {
+        font-size: 2.5rem;
+    }
+    .scroll-menu__actiiveRight {
+        right: -42px;
+    }
+}
+@media only screen and (max-width: 384px){
+    .scroll-menu {
+        right: -110%;
+    }
+    .promo-title__wrapButton button {
+        width: 155px;
+    }
+    .veterinarian__text{
+        padding-right: 0;
+    }
+    .veterinarian-video__text{
+        padding-left: 0;
+    }
+    .scroll-menu__click{
+        line-height: 35px;
+    }
+    .scroll-menu__actiiveRight {
+        right: -18% !important;
+    }
+}
+/*Для Iphon*/
+@media only screen and (max-width: 320px){
+    .scroll-menu {
+        right: -125%;
+    }
+    .scroll-menu__click {
+        height: 30px;
+        line-height: 30px;
+        left: -215px;
+    }
+    .promo-title h1 {
+        font-size: 2rem;
+    }
+    .promo-title__wrapButton {
+        flex-wrap: wrap;
+    }
+    .promo-title__wrapButton button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .scroll-menu{
+        width: 335px;
+    }
+    .scroll-menu__actiiveRight{
+        right: -50px!important;
+    }
+    .scroll-menu__active{
+        right: -105%;
+    }
+    .scroll-menu__click{
+        top: 186px;
+    }
+    article h1 {
+        font-size: 1.5rem;
+    }
+}

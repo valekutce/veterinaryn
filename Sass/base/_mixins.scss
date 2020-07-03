@@ -1,0 +1,24 @@
+@mixin lightTitle {
+   color: $lightText;
+   font-size: 3rem; 
+   font-weight: 700;
+}
+@mixin darkTitle {
+    color: $darkText;
+    font-size: 3rem; 
+    font-weight: 600;
+ }
+
+ @mixin button{
+    background-color: #00bec9;
+    color: $lightText;
+    font-size: 25px;
+    padding: 15px 45px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+        background-color: darken($color: #00bec9, $amount: 10%);
+    }
+}
